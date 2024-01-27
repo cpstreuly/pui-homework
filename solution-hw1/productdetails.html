@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div>
+      <a href="./index.html">
+        <img id="logo" src="../assets/logo/logo-01.svg" width="400" alt="logo">
+      </a>
+      <hr>
+    </div>
+    
+    <div class="center">
+      <div id="nav">
+        <a href="./index.html" id="active-page">PRODUCTS</a> <br>
+        <a href="./cart.html">CART</a> 
+      </div>
+
+      <!-- DESCRIPTION -->
+      <br>
+      <p class="description">Original cinnamon roll</p>
+      <br>
+
+      <img src="../assets/products/original-cinnamon-roll.jpg" width="400" height="400" alt="cinnamon roll">
+      <br>
+      <p class="center">Customize our delicious hand-made cinnamon bun to your liking!</p>
+      
+      <div class="dropdown">
+        <p class="label">Glazing:</p>
+        <select name="glazing" id="glazing">
+          <option value="original">Keep original</option>
+          <option value="sugar-milk">Sugar milk</option>
+          <option value="vanilla-milk">Vanilla milk</option>
+          <option value="double-chocolate">Double chocolate</option>
+        </select> 
+      </div> <br>
+
+      <div class="dropdown">
+        <p class="label">Pack size:</p>
+        <select name="pack-size" id="pack-size">
+          <option value="one">1</option>
+          <option value="three">3</option>
+          <option value="six">6</option>
+          <option value="twelve">12</option>
+        </select>
+      </div> <br>
+      <span class="price">$2.49</span>
+      <button type="button" >Add to Cart</button>
+    </div>
+  </body>
+</html>

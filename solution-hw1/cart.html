@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  
+  <body>
+    <!-- HEADER -->
+    <div>
+      <a href="./index.html">
+        <img id="logo" src="../assets/logo/logo-01.svg" width="400" alt="logo">
+      </a>
+      <hr>
+    </div>
+    
+    <div class="center">
+      <div id="nav">
+        <a href="./index.html">PRODUCTS</a> <br>
+        <a href="./cart.html" id="active-page">CART</a> 
+      </div>
+
+      <!-- DESCRIPTION -->
+      <br>
+      <p class="description">Shopping Cart</p>
+      <br>
+
+      <div id="all-cart-items">
+        <div class="cart-item">
+          <img src="../assets/products/original-cinnamon-roll.jpg" width="200" height="200" alt="original cinammon roll">
+          <div class="item-description">
+            <span class="remove-cmd">Remove</span> <br>
+            Original Cinammon Roll <br>
+            Glazing: Keep original <br>
+            Pack Size: 1 <br>
+            $2.49
+          </div>  
+        </div>
+
+        <div class="cart-item">
+          <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" width="200" height="200" alt="double chocolate cinnamon roll">
+          <div class="item-description">
+            <span class="remove-cmd">Remove</span> <br>
+            Double Chocolate Cinammon Roll <br>
+            Glazing: Sugar milk <br>
+            Pack Size: 6 <br>
+            $27.45
+          </div>  
+        </div>
+      </div>
+      <hr id="cart-end"> <br>
+      Total: $29.94 <br>
+      <button type="button" >Checkout</button>
+    </div>
+  </body>
+</html>

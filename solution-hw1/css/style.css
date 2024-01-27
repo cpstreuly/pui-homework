@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+hr {
+    height: 3px;
+    background-color: black;
+    color: black;
+    border: none;
+}
+
+img {
+    border: 3px solid #000000;
+}
+
+.center {
+    text-align: center;
+}
+
+#logo {
+    padding: 15px;
+    border: none;
+}
+
+.description {
+    font-size: 30px;
+    font-weight: 250;
+    margin-bottom: 15px;
+}
+
+/* link styling */
+#nav {
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: 300;
+}
+#nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    background-color: yellow;
+    font-weight: 600;
+}
+
+#active-page {
+    background-color: yellow;
+    font-weight: 600;
+}
+
+/* individual product styling  */
+.container {
+    display: inline-block;
+    padding: 5px; 
+    margin: 20px;
+}
+.container:hover {
+    background-color: yellow;
+}
+
+.container:hover .prod-name {
+    font-weight: bold;
+}
+
+.container a {
+    color: black;
+}
+
+.prod-info {
+    text-align: left;
+    line-height: 35px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.prod-name {
+    text-decoration: underline;
+}
+
+/* dropdown menu styling */
+.dropdown {
+    display: inline-block;
+    padding: 5px; 
+    margin: 5px;
+}
+
+.label {
+    text-align: left;
+    margin: 5px;
+}
+
+select {
+    border: 3px solid black;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 6px;
+}
+
+/* button styling */
+button {
+    background-color: yellow;
+    width: 120px;
+    height: 40px;
+    border: 3px solid black;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+/* cart items styling */
+.price {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.remove-cmd {
+    font-weight: bold;
+    text-decoration: underline;   
+}
+
+.item-description {
+    line-height: 35px
+}
+
+.cart-item {
+    padding: 15px;
+}
+
+#cart-end {
+    width: 75%;
+
+}

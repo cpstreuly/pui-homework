@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="app.js"></script>
+  </head>
+  
+  <body>
+    <!-- HEADER -->
+    <div id="header">
+      <div>
+        <a href="./index.html">
+          <img id="logo" src="../assets/logo/logo-01.svg" width="400" alt="logo">
+        </a>
+      </div>
+      <div id="h-content" class="fill-container">
+            <div id="nav">
+                <a href="./index.html" id="active-page">PRODUCTS</a>
+                <a href="./cart.html">CART <span class="oval">2</span></a>
+            </div>
+            <div><hr></div>
+            <div> <p class="description">Our hand-made cinnamon rolls</p> </div>
+      </div>
+    </div>
+    
+    <!-- PRODUCT CONTENT -->
+    <div id="product-page-container">
+      <div>
+        <img src="../assets/products/original-cinnamon-roll.jpg" width="600" height="600" alt="cinnamon roll">
+      </div>
+      
+      <div id="product-details">
+        <p>Customize our delicious hand-made cinnamon bun to your liking!</p>
+        
+        <div id="product-dropdowns">
+          <div class="dropdown">
+            <p class="label">Glazing:</p>
+            <select name="glazing" id="glazing" onchange="glazingChange(this)">
+            </select> 
+          </div>
+      
+          <div class="dropdown">
+            <p class="label">Pack size:</p>
+            <select name="pack-size" id="pack-size" onchange="packSizeChange(this)"">
+            </select>
+          </div>
+        </div>
+        
+        <div id="add-cart">
+          <div class="final-price">
+            $<span id="price">2.49</span>
+            <button type="button" >Add to Cart</button>
+          </div>
+          
+        </div>   
+      </div>
+
+    </div>
+  </body>
+
+  </html>

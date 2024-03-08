@@ -141,7 +141,6 @@ function populateProductDetails() {
 function updateCartIcon() {
     let cart = JSON.parse(localStorage.getItem("cart"));
     let icon = document.querySelector(".oval");
-    console.log(cart.length);
     icon.innerText = cart.length;
 }
 

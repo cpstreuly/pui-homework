@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="main.js"></script>
+  </head>
+  
+  <body>
+   <!-- HEADER -->
+   <div id="header">
+      <div>
+        <a href="./index.html">
+          <img id="logo" src="../assets/logo/logo-01.svg" width="400" alt="logo">
+        </a>
+      </div>
+      <div id="h-content" class="fill-container">
+        <div id="nav">
+            <a href="./index.html">PRODUCTS</a>
+            <a href="./cart.html"id="active-page">CART <span class="oval">2</span></a>
+        </div>
+        <div><hr></div>
+        <div> <p class="description">Shopping Cart</p> </div>
+      </div>
+  </div>
+
+  <div id="cart">
+    <div id="cart-container">
+      <template id="cart-item-template">
+        <div class="cart-item">
+          <div>
+            <img src="../assets/products/original-cinnamon-roll.jpg" width="200" height="200" alt="original cinammon roll">
+            <br>
+            <span class="remove-cmd">Remove</span>
+          </div>
+          
+          <div class="item-description">
+            Original Cinammon Roll <br>
+            Glazing: Keep original <br>
+            Pack Size: 1 <br>
+          </div>  
+
+          <div class="cart-price"><br><br>$2.49</div>
+        </div>
+      </template>
+    </div>
+      
+    <div><hr></div>
+
+    <div id="total-price">
+      <hr>
+
+      <div id="total-text">
+        Total:
+      </div>
+      <div> 
+        $<span id="num-price">29.94</span> 
+          <br>
+        <button type="button" >Checkout</button>
+      </div>
+      
+    </div>
+    
+    </div>
+  </body>
+</html>

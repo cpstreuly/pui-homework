@@ -95,7 +95,8 @@ function glazingChange(element) {
     let packSize = parseFloat(packSizeOption.value);
     const priceChange = parseFloat(element.value);
     let newPrice = (basePrice + priceChange) * packSize;
-    document.querySelector("#price").innerHTML = Math.round(newPrice * 100) / 100;
+    newPrice = Math.round(newPrice * 100) / 100;
+    document.querySelector("#price").innerHTML = newPrice.toFixed(2);
 }
 
 function packSizeChange(element) {
@@ -110,7 +111,8 @@ function packSizeChange(element) {
     let glazing = parseFloat(glazingOption.value);
     const priceChange = parseFloat(element.value);
     let newPrice = (basePrice + glazing) * priceChange;
-    document.querySelector("#price").innerHTML = Math.round(newPrice * 100) / 100;
+    newPrice = Math.round(newPrice * 100) / 100;
+    document.querySelector("#price").innerHTML = newPrice.toFixed(2);
 }
 
 function populateProductDetails() {

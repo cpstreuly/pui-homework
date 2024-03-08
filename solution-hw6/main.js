@@ -274,11 +274,11 @@ function findCart() {
 findCart();
 updateCartIcon();
 
-if (window.location.pathname.startsWith("/solution-hw6/productdetails.html")) {
+if (window.location.pathname.includes("/solution-hw6/productdetails.html")) {
     populateDropdowns(glazings, packSizes);
     populateProductDetails();
 }
 
-if (window.location.pathname.startsWith("/solution-hw6/cart.html")) {
+if (window.location.pathname.includes("/solution-hw6/cart.html")) {
     displayCartItems();
 }
